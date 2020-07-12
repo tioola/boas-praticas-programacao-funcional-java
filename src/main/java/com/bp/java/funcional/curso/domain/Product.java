@@ -35,6 +35,15 @@ public class Product {
         return description;
     }
 
+    // Isto não deveria ser feito
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Product changeDescription(String newDescription){
+        return new Product(this.id, newDescription,this.type,this.price,this.amount);
+    }
+
     public ProductType getType() {
         return type;
     }
@@ -49,10 +58,13 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                '}';
+        return "{\"Product\":{"
+                + "                        \"id\":\"" + id + "\""
+                + ",                         \"description\":\"" + description + "\""
+                + ",                         \"type\":\"" + type + "\""
+                + ",                         \"price\":\"" + price + "\""
+                + ",                         \"amount\":\"" + amount + "\""
+                + "}}";
     }
 
     @Override
