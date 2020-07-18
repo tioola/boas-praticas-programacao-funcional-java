@@ -31,9 +31,34 @@ public class ProductRepository {
                     Product.createProduct(17L, "Apple Watch", ProductType.ELECTRONIC, BigDecimal.valueOf(2999.00), 3)
                     ));
 
+    private static final List<Product> PRODUCTS_FROM_EXTERNAL_ELECTRONIC_TPP = Collections.unmodifiableList(
+            Arrays.asList(
+                    Product.createProduct(10001L, "Samsung S10", ProductType.ELECTRONIC, BigDecimal.valueOf(1020.4), 2),
+                    Product.createProduct(10002L, "Samsung S20", ProductType.ELECTRONIC, BigDecimal.valueOf(2030.1), 5),
+                    Product.createProduct(10003L, "LG TV", ProductType.ELECTRONIC, BigDecimal.valueOf(1000.14), 8),
+                    Product.createProduct(10003L, "SONY TV", ProductType.ELECTRONIC, BigDecimal.valueOf(3002,6), 7)
+            )
+    );
+
+    private static final List<Product> PRODUCTS_FROM_EXTERNAL_CLOTHES_TPP = Collections.unmodifiableList(
+            Arrays.asList(
+                    Product.createProduct(10001L, "Tommy T-SHIRT", ProductType.FOOD, BigDecimal.valueOf(110.14), 20),
+                    Product.createProduct(10002L, "Lacoste T-SHIRT", ProductType.FOOD, BigDecimal.valueOf(150.14), 45),
+                    Product.createProduct(10003L, "Polo", ProductType.FOOD, BigDecimal.valueOf(3.14), 7)
+            )
+    );
 
     public static List<Product> getProducts() {
         return PRODUCTS;
     }
+
+    public static List<Product> getProductsFromElectronicExternalTpp(){
+        return PRODUCTS_FROM_EXTERNAL_ELECTRONIC_TPP;
+    }
+
+    public static List<Product> getProductsFromClothesExternalTpp(){
+        return PRODUCTS_FROM_EXTERNAL_CLOTHES_TPP;
+    }
+
 }
 
