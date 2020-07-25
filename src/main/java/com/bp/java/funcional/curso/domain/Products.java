@@ -1,6 +1,7 @@
 package com.bp.java.funcional.curso.domain;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -21,6 +22,10 @@ public class Products {
     public static Predicate<Product> priceHigherThan(BigDecimal value){
         return product -> product.getPrice().compareTo(value) > 0;
     }
+
+    public static Comparator<Product> priceDifference = Comparator.comparing(Product::getPrice);
+
+    public static Comparator<Product> amountDifference = Comparator.comparing(Product::getAmount);
 
     Function<String, Predicate<Product>> startsWithFunction = letter -> product -> product.getDescription().startsWith(letter);
 

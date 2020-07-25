@@ -17,6 +17,7 @@ public class ProductRepository {
                     Product.createProduct(3L, "Grape", ProductType.FOOD, BigDecimal.valueOf(5.33), 12),
                     Product.createProduct(4L, "Macbook Pro", ProductType.ELECTRONIC, BigDecimal.valueOf(12000.00), 1),
                     Product.createProduct(5L, "Lemon", ProductType.FOOD, BigDecimal.valueOf(1.0), 20),
+                    Product.createProduct(2000L, "Avocado", ProductType.FOOD, BigDecimal.valueOf(1.0), 10),
                     Product.createProduct(6L, "White Socks", ProductType.CLOTHING, BigDecimal.valueOf(2.0), 53),
                     Product.createProduct(7L, "Basic T-Shirt White", ProductType.CLOTHING, BigDecimal.valueOf(12.0), 4),
                     Product.createProduct(8L, "Red Label", ProductType.DRINK, BigDecimal.valueOf(60.0), 12),
