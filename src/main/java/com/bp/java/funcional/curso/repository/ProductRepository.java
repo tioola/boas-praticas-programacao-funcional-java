@@ -49,6 +49,12 @@ public class ProductRepository {
             )
     );
 
+    public static Product getById(Long id){
+        return ProductRepository.getProducts()
+                .stream()
+                .filter(product -> product.getId().equals(id)).findFirst().orElseThrow(() -> new IllegalArgumentException("Product does not exist in the repository"));
+    }
+
     public static List<Product> getProducts() {
         return PRODUCTS;
     }
