@@ -58,11 +58,11 @@ public class ExceptionHandling {
 
         List<String> collect = Stream.of("/home/curso-programacao-funcional/products/1.json",
                 "/home/curso-programacao-funcional/products/150.json")
-                .map(stringPath -> {
+                .map(stringPath ->
                     mapPathToContent(stringPath, path -> Files.readAllLines(path)
                             .stream()
-                            .collect(Collectors.joining("\n")));
-                }).collect(Collectors.toList());
+                            .collect(Collectors.joining("\n")))
+                ).collect(Collectors.toList());
 
     }
 
