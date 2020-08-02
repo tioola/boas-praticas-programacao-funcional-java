@@ -44,6 +44,10 @@ public class Product {
         return new Product(this.id, newDescription,this.type,this.price,this.amount);
     }
 
+    public Product increaseAmount(Integer amount) {
+        return new Product(this.id, this.description,this.type,this.price,amount);
+    }
+
     public ProductType getType() {
         return type;
     }
@@ -79,4 +83,6 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
 }
