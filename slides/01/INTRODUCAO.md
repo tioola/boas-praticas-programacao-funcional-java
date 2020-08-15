@@ -16,6 +16,22 @@ patat:
 \_____/\___/ \__,_|___/ \/    |_|  \__,_|\__|_|\___\__,_|___/         \___/ \__,_| \_/ \__,_| \/    \__,_|_| |_|\___|_|\___/|_| |_|\__,_|_|
 ~~~~~~~
 
+
+        
+
+---
+
+# Objetivo do Curso
+
+##O que este curso não é?
+
+* Não é um curso para aprender os conceitos basicos de streams, lambda e programação funcional
+
+##O que esperar deste curso?
+
+* Demonstrar boas práticas na utilização do paradigma funcional através de exemplos e comparações. 
+
+
 ---
 
 #Apresentação Pessoal
@@ -36,19 +52,6 @@ _Diogo Favero Fabrile_
     + OCEJPAD 6(Oracle Certified Java Persistence API Developer)
     + OCEJWSD 6(Oracle Certified Java Web Service Developer)
     + IBM Cloud V1
-        
-
----
-
-# Objetivo do Curso (Alinhando expectativas)
-
-##O que este curso não é?
-
-* Não é um curso para aprender os conceitos basicos de streams, lambda e programação funcional
-
-##O que esperar deste curso?
-
-* Demonstrar boas práticas na utilização do paradigma funcional através de exemplos e comparações. 
 
     
 ---
@@ -96,11 +99,22 @@ _Diogo Favero Fabrile_
 
 ---
 
+#Outras considerações
+
+#Inglês e Português
+
+Termos e variaveis misturando um pouco de inglês e português. 
+
 #Slides
 
 Apresentação utilizando o **patat**. Aplicação para slides no terminal.
 
-https://github.com/jaspervdj/patat 
+https://github.com/jaspervdj/patat
+
+#IDE
+
+Intellij IDEA
+
 
 ---
 
