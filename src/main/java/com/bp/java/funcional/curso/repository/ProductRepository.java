@@ -29,7 +29,8 @@ public class ProductRepository {
                     Product.createProduct(14L, "Notebook Lenovo", ProductType.ELECTRONIC, BigDecimal.valueOf(4999.00), 2),
                     Product.createProduct(15L, "Sparkling Water", ProductType.DRINK, BigDecimal.valueOf(1.50), 111),
                     Product.createProduct(16L, "Orange Juice", ProductType.DRINK, BigDecimal.valueOf(10.59), 34),
-                    Product.createProduct(17L, "Apple Watch", ProductType.ELECTRONIC, BigDecimal.valueOf(2999.00), 3)
+                    Product.createProduct(17L, "Apple Watch", ProductType.ELECTRONIC, BigDecimal.valueOf(2999.00), 3),
+                    Product.createProduct(18L, "Pager", ProductType.ELECTRONIC, BigDecimal.valueOf(100.33), 8)
                     ));
 
     private static final List<Product> PRODUCTS_FROM_EXTERNAL_ELECTRONIC_TPP = Collections.unmodifiableList(
